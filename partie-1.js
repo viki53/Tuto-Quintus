@@ -15,3 +15,5 @@ var Q = new Quintus({
 	width: 600, // Largeur de base
 	height: 800 // Hauteur de base
 }).controls().touch(); // On initialise la gestion des contrôles et la couche tactile qui va avec
+
+console.log('Quintus est prêt !');
