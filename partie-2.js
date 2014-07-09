@@ -44,4 +44,8 @@ Q.scene('startGame', function(stage) { // On crée une nouvelle scène que l'on 
 
 Q.load(['raymond.png'], function() {
 	Q.stageScene('startGame', 0); // On affiche notre scène
+}, {
+	progressCallback: function(loaded, total) {
+		console.log('Chargement : ' + Math.floor(loaded/total*100) + '%');
+	}
 });
