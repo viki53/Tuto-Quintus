@@ -1,0 +1,29 @@
+
+html, body, canvas, p{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font-family: Tahoma, Geneva, Kalimati, sans-serif;
+	text-align: center;
+	color: #424242;
+	background-color: #f7f7f7;
+}
+body{
+	padding: 1em 0;
+	width: 600px;
+	margin: auto;
+}
+
+canvas{
+	background-color: #fff;
+	margin: 2em 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	color: inherit;
+}

@@ -4,18 +4,18 @@
 		<meta charset="UTF-8" />
 		<title>Mon super jeu en HTML5 avec Quintus !</title>
 		<!-- Une petite couche de peinture… -->
-		<style>
-			html, body, canvas, p{ margin: 0; padding: 0; }
-			html, body{ font-family: Tahoma, Geneva, Kalimati, sans-serif; text-align: center; color: #424242; background-color: #f7f7f7; }
-			canvas{ background-color: #fff; }
-		</style>
+		<link rel="stylesheet" href="./demo.css" />
 	</head>
 	<body>
 		<h1>Mon super jeu</h1>
 
+		<p><a href="./">Sommaire</a></p>
+
 		<canvas id="game" width="600" height="800">
 			<p lang="fr">Votre navigateur ne supporte pas la balise canvas.</p> <!-- Un petit message pour les dinosaures -->
 		</canvas>
+
+		<p style="text-align: right"><a href="./partie-2.html">Partie 2 →</a></p>
 
 		<script src="quintus-all.js"></script> <!-- On inclue la librairie -->
 		<script src="partie-1.js"></script> <!-- On inclue le code de notre jeu -->
