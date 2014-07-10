@@ -20,8 +20,17 @@ Q.scene('startGame', function(stage) { // On crée une nouvelle scène que l'on 
 	
 	var img_bg = new Q.Sprite({ x: Q.width/2, y: Q.height/2, w: Q.width, h: Q.height, tileW: Q.width, tileH: Q.width, asset: 'raymond.png'}); // On peut ajouter une image de fond, avec un petit dessin par exemple
 	stage.insert(img_bg); // Ne pas oublier d'insérer l'image (à noter que vous pouvez tout faire sur une seule ligne, comme pour le texte juste en-dessous)
+	img_bg.add('tween');
+
+	function moveSheep() {
+		this.animate({ y: this.p.cy-50 }, 1.5, Q.Easing.Quadratic.InOut, {}).chain({ y: this.p.cy }, 1.5, Q.Easing.Quadratic.InOut, { callback: moveSheep });
+	}
+
+	moveSheep.apply(img_bg);
 
 	var title = stage.insert(new Q.UI.Text({ x: Q.width/2, y: 50, label: 'Mon super jeu', align: 'center', size: 48, color: '#aa4242' })); // On insère un titre sous forme de texte en haut, centré
+
+
 
 	var container = stage.insert(new Q.UI.Container({ // On crée un conteneur avec un fond transparent, centré, avec des angles arrondis de 5 px
 		x: Q.width/2,
