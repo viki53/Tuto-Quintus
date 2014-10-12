@@ -203,7 +203,7 @@ Q.scene('endGame', function (stage) {
 
 	button.on('click', function() { // On place un écouteur sur le bouton pour gérer le clic
 		Q.clearStages(); // On vide les scènes affichées, pour repartir sur un canvas vierge
-		console.log('Bouton cliqué, re-lancement du jeu…'); // Regardez votre console ;)
+		console.log('Bouton cliqué, redémarrage du jeu…'); // Regardez votre console ;)
 		Q.stageScene('game', 0); // On relance le jeu
 	});
 
